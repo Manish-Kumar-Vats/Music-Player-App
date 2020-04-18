@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000"
+    android:paddingTop="6dp"
+    android:paddingBottom="4dp">
+
+    <ImageView
+        android:id="@+id/iconSong"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_songjpg" />
+    <TextView
+        android:id="@+id/songName"
+        android:layout_toRightOf="@id/iconSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="Song Name"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/singerName"
+        android:layout_toRightOf="@id/iconSong"
+        android:layout_width="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/songName"
+        android:text="Singer Name"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/songDuration"
+        android:layout_toRightOf="@id/singerName"
+        android:layout_below="@id/songName"
+        android:layout_marginLeft="32dp"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="04:30"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/playIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
